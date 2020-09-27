@@ -57,6 +57,7 @@ class Board extends React.Component {
             arr[0] = temp;
             indexes.splice(randomIndex, 1);
         }
+        this.setState({ cards: arr})
     }
     handleClick = (card) => {
         // set cardsInPlay ++
